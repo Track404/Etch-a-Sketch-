@@ -1,26 +1,37 @@
 
 
 #allDiv{
-height: 960px;
 width: 960px;
+height: 960px;
 border-style: solid;
 border-color: black;
 display: flex;
 flex-direction: column;
-align-items: center;
-justify-content: center;
+align-items:stretch; 
+justify-content: stretch;
+flex-wrap: wrap;
+position: absolute;
 
-
+  
 }
 
 .row{
     display: flex;
+    flex: 1;
+    
+    
     
 }
 
 .pixel{
     border: 1px solid #000000;
-    height: 50px;
-    width: 50px;
     
+    display: flex;
+    flex: 1;
+    
+}
+
+#theButton{
+    margin: 50px;
+    padding: 20px;
 }
