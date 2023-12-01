@@ -1,0 +1,26 @@
+
+
+#allDiv{
+height: 960px;
+width: 960px;
+border-style: solid;
+border-color: black;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+
+}
+
+.row{
+    display: flex;
+    
+}
+
+.pixel{
+    border: 1px solid #000000;
+    height: 50px;
+    width: 50px;
+    
+}
