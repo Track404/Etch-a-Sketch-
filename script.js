@@ -23,9 +23,15 @@ function makeNewGrid() {
 
   button.addEventListener("click", () => {
     numberOfDiv = prompt("New Grid Size");
-    deleteDiv();
-    CreateGrid(numberOfDiv);
-    makeColorDiv();
+
+    if (numberOfDiv > 100) {
+      alert("Number Input should not exceed 100 \n Try Again!");
+    } 
+     else {
+      deleteDiv();
+      CreateGrid(numberOfDiv);
+      makeColorDiv();
+    }
   });
 }
 
@@ -36,8 +42,7 @@ function makeColorDiv() {
 
   colorChange.forEach(function (colorChange) {
     colorChange.addEventListener("mouseover", () => {
-        colorChange.style.backgroundColor = generateColor(); 
-
+      colorChange.style.backgroundColor = generateColor();
     });
   });
 }
@@ -53,15 +58,14 @@ function deleteDiv() {
 
 // create a random HEX color
 
-function generateColor(){
-    const hexArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'A', 'B', 'C', 'D', 'E', 'F'];
-    let code = "";
-    for(let i=0; i<6; i++){
-     code += hexArray[Math.floor(Math.random()*16)];
-    }
-    return `#${code}`
-   }
-   
+function generateColor() {
+  const hexArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
+  let code = "";
+  for (let i = 0; i < 6; i++) {
+    code += hexArray[Math.floor(Math.random() * 16)];
+  }
+  return `#${code}`;
+}
 
 //initial grid
 
