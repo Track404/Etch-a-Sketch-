@@ -1,37 +1,52 @@
-
-
-#allDiv{
-width: 960px;
-height: 960px;
-border-style: solid;
-border-color: black;
-display: flex;
-flex-direction: column;
-align-items:stretch; 
-justify-content: stretch;
-flex-wrap: wrap;
-position: absolute;
-
+#allDiv {
+  width: 960px;
+  height: 960px;
+  margin: auto;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: stretch;
+  flex-wrap: wrap;
   
 }
 
-.row{
-    display: flex;
-    flex: 1;
-    
-    
-    
+.row {
+  display: flex;
+  flex: 1;
+  
 }
 
-.pixel{
-    border: 1px solid #000000;
-    
-    display: flex;
-    flex: 1;
-    
+.pixel {
+  border: 1px solid #000000;
+  background-color: white;
+  display: flex;
+  flex: 1;
 }
 
-#theButton{
-    margin: 50px;
-    padding: 20px;
+#theButton {
+  margin: 50px;
+  padding: 20px;
+  border-radius: 12px;
+  border: none;
+  color: white;
+  font-size: 24px;
+  background-color: #023047;
+}
+#theButton:hover {
+  background-color: #04AA6D; /* Green */
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#body {
+  text-align: center;
+  background-color: #219ebc;
+}
+
+h1{
+  background-color: #023047;
+  color: white;
+  padding: 20px;
+  width: 700px;
+  margin: auto;
 }
